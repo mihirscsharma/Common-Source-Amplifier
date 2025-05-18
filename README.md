@@ -1,83 +1,56 @@
 # Common-Source-Amplifier
 This project showcases the design, simulation, and performance validation of a Common Source (CS) amplifier with current mirror biasing, implemented in Cadence Virtuoso.
+Link to the document with screenshots of the analysis: https://docs.google.com/document/d/16Nq0R-XXU4KiE3zkAt7QfHbON2CgyTzcXKO2gbdnlgM/edit?usp=sharing
 
 The design was rigorously tested across process-voltage-temperature (PVT) corners and validated for statistical robustness using Monte Carlo analysis.
 
-Key Concepts
-Analog IC Design
+Key Concepts: 
 
-Current Mirror Biasing
+1. Analog IC Design
+2. Current Mirror Biasing
+3. Small-Signal Gain & Bandwidth Optimization
+4. THD (Linearity) Characterization
+5. PVT Variation Testing
+6. Monte Carlo Yield Simulation
 
-Small-Signal Gain & Bandwidth Optimization
+Objective: 
 
-THD (Linearity) Characterization
+1. Design a CS amplifier that:
+2. Achieves >14 dB voltage gain
+3. Has >10 GHz bandwidth
+4. Consumes <2.5 mW power
+5. Maintains linearity across varying input amplitudes
+6. Passes all five PVT corners (tt, ff, fs, sf, ss)
+7. Achieves high yield under Monte Carlo simulation
 
-PVT Variation Testing
+Procedure Summary:
+1. Designed and biased the amplifier using a current mirror topology.
+2. Built the schematic and testbench in Cadence Virtuoso
+3. Ran AC, transient, THD, PVT, and Monte Carlo simulations
+4. Verified spec compliance using data from Table 1 constraints
 
-Monte Carlo Yield Simulation
-
-📐 Objective
-Design a CS amplifier that:
-
-Achieves >14 dB voltage gain
-
-Has >10 GHz bandwidth
-
-Consumes <2.5 mW power
-
-Maintains linearity across varying input amplitudes
-
-Passes all five PVT corners (tt, ff, fs, sf, ss)
-
-Achieves high yield under Monte Carlo simulation
-
-🧪 Procedure Summary
-Designed and biased the amplifier using a current mirror topology
-
-Built the schematic and testbench in Cadence Virtuoso
-
-Ran AC, transient, THD, PVT, and Monte Carlo simulations
-
-Verified spec compliance using data from Table 1 constraints
-
-📊 Results Highlights
-Metric	Result	Target
-Voltage Gain	>14 dB across corners	>14 dB
-Bandwidth	>10 GHz	>10 GHz
-Power Consumption	<2.5 mW	<2.5 mW
-THD (10 mV)	~5.73%	Acceptable
-THD (200 mV)	~27.45%	Shows nonlinearity limits
+Results Highlights: 
 Monte Carlo Yield	✅ All specs passed	High yield
 
 Full frequency and transient responses were recorded for multiple input amplitudes (10–200 mV), confirming linearity limits and amplifier stability.
 
-📈 Monte Carlo and PVT Testing
+Monte Carlo and PVT Testing: 
 Simulated across:
 
-5 Process Corners: tt, ff, fs, sf, ss
+1. 5 Process Corners: tt, ff, fs, sf, ss
+2. Voltage: 0.95V, 1.0V, 1.1V
+3. Temperatures: 10°C, 45°C, 75°C
 
-Voltage: 0.95V, 1.0V, 1.1V
 
-Temperatures: 10°C, 45°C, 75°C
+Tools Used: 
 
-Yield Stats:
-High statistical yield across all metrics
+1. Cadence Virtuoso
+2. Spectre Simulator (AC, Transient, and Monte Carlo)
+3. Parametric Analysis
+4. DFT/FFT for THD calculation
 
-Histograms for gain, bandwidth, power, and current confirmed tight variation and reliable design margins
-
-🛠 Tools Used
-Cadence Virtuoso
-
-Spectre Simulator (AC, Transient, and Monte Carlo)
-
-Parametric Analysis
-
-DFT/FFT for THD calculation
-
-🧾 Reference
+References:
 EE 332 Lab 2 Specification Sheet (Spring 2025)
-
 Instructor resources from University of Washington Canvas portal
 
-💡 Takeaways
-This lab demonstrated the importance of robust analog design under real-world variability. By combining current mirror biasing with layout-aware design and extensive simulation, the amplifier met stringent spec requirements and showcased strong statistical reliability.
+
