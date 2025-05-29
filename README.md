@@ -1,4 +1,4 @@
-# Common-Source-Amplifier
+# Common-Source-Amplifier: Design, Simulation, and Performance validation 
 This project showcases the design, simulation, and performance validation of a Common Source (CS) amplifier with current mirror biasing, implemented in Cadence Virtuoso.
 Link to the document with screenshots of the analysis: https://docs.google.com/document/d/16Nq0R-XXU4KiE3zkAt7QfHbON2CgyTzcXKO2gbdnlgM/edit?usp=sharing
 
