@@ -28,15 +28,15 @@ Procedure Summary:
 3. Ran AC, transient, THD, PVT, and Monte Carlo simulations
 
 
-**Monte Carlo and PVT Testing: 
-Simulated across:**
+Monte Carlo and PVT Testing: 
+Simulated across:
 
 1. 5 Process Corners: tt, ff, fs, sf, ss
 2. Voltage: 0.95V, 1.0V, 1.1V
 3. Temperatures: 10°C, 45°C, 75°C
 
 
-**Tools Used: **
+Tools Used:
 
 1. Cadence Virtuoso
 2. Spectre Simulator (AC, Transient, and Monte Carlo)
