@@ -3,7 +3,7 @@ This project showcases the design, simulation, and performance validation of a C
 
 The design was tested across process-voltage-temperature (PVT) corners and validated using Monte Carlo analysis.
 
-Key Concepts: 
+**Key Concepts: **
 
 1. Analog IC Design
 2. Current Mirror Biasing
@@ -12,7 +12,7 @@ Key Concepts:
 5. PVT Variation Testing
 6. Monte Carlo Yield Simulation
 
-Objective: 
+**Objective: **
 
 1. Design a CS amplifier that:
 2. Achieves >14 dB voltage gain
@@ -21,22 +21,22 @@ Objective:
 5. Maintains linearity across varying input amplitudes
 6. Passes all five PVT corners (tt, ff, fs, sf, ss)
 7. Achieves high yield under Monte Carlo simulation
-
-Procedure Summary:
+**
+Procedure Summary:**
 1. Designed and biased the amplifier using a current mirror topology.
 2. Built the schematic and testbench in Cadence Virtuoso
 3. Ran AC, transient, THD, PVT, and Monte Carlo simulations
 
 
-Monte Carlo and PVT Testing: 
-Simulated across:
+**Monte Carlo and PVT Testing: 
+Simulated across:**
 
 1. 5 Process Corners: tt, ff, fs, sf, ss
 2. Voltage: 0.95V, 1.0V, 1.1V
 3. Temperatures: 10°C, 45°C, 75°C
 
 
-Tools Used: 
+**Tools Used: **
 
 1. Cadence Virtuoso
 2. Spectre Simulator (AC, Transient, and Monte Carlo)
