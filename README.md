@@ -1,7 +1,7 @@
 # Common-Source-Amplifier: Design, Simulation, and Performance validation 
 This project showcases the design, simulation, and performance validation of a Common Source (CS) amplifier with current mirror biasing, implemented in Cadence Virtuoso.
 
-The design was rigorously tested across process-voltage-temperature (PVT) corners and validated for statistical robustness using Monte Carlo analysis.
+The design was tested across process-voltage-temperature (PVT) corners and validated using Monte Carlo analysis.
 
 Key Concepts: 
 
@@ -26,12 +26,7 @@ Procedure Summary:
 1. Designed and biased the amplifier using a current mirror topology.
 2. Built the schematic and testbench in Cadence Virtuoso
 3. Ran AC, transient, THD, PVT, and Monte Carlo simulations
-4. Verified spec compliance using data from Table 1 constraints
 
-Results Highlights: 
-Monte Carlo Yield	✅ All specs passed	High yield
-
-Full frequency and transient responses were recorded for multiple input amplitudes (10–200 mV), confirming linearity limits and amplifier stability.
 
 Monte Carlo and PVT Testing: 
 Simulated across:
