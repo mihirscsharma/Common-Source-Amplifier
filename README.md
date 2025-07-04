@@ -16,12 +16,12 @@ The design was tested across process-voltage-temperature (PVT) corners and verif
 ## **Objective:**
 
 Design a CS amplifier that:  
-2. Achieves >14 dB voltage gain  
-3. Has >10 GHz bandwidth  
-4. Consumes <2.5 mW power  
-5. Maintains linearity across varying input amplitudes  
-6. Passes all five PVT corners (tt, ff, fs, sf, ss)  
-7. Achieves high yield under Monte Carlo simulation  
+1. Achieves >14 dB voltage gain  
+2. Has >10 GHz bandwidth  
+3. Consumes <2.5 mW power  
+4. Maintains linearity across varying input amplitudes  
+5. Passes all five PVT corners (tt, ff, fs, sf, ss)  
+6. Achieves high yield under Monte Carlo simulation  
 
 ## **Procedure Summary:**
 
