@@ -15,7 +15,7 @@ The design was tested across process-voltage-temperature (PVT) corners and verif
 
 ## **Objective:**
 
-1. Design a CS amplifier that:  
+Design a CS amplifier that:  
 2. Achieves >14 dB voltage gain  
 3. Has >10 GHz bandwidth  
 4. Consumes <2.5 mW power  
